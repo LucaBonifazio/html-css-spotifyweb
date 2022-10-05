@@ -23,12 +23,16 @@ aside{
     flex: 0 0 auto;
     background-color: black;
     width: 50px;
-    height: calc(100vh - 91px);
 }
 
 .container{
     background-color: #141922;
     width: 100%;
+}
+
+.content-box{
+    margin-top: 90px;
+    margin-bottom: 91px;
 }
 
 .content{
@@ -56,6 +60,10 @@ footer{
 a{
     text-decoration: none;
     color: white;
+}
+
+p{
+    color: #787A7F;
 }
 
 /* media query */
@@ -103,11 +111,7 @@ width 1440 */
 
 /* main - content */
 
-.content-box{
-    margin-top: 90px;
-}
-
-.content h1{
+.content .recently{
     padding: 3rem 0 2rem;
 }
 
@@ -123,13 +127,50 @@ width 1440 */
     justify-content: space-between;
 }
 
+.content a{
+    color: #787A7F;
+}
+
 .box-card{
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 calc(100% / 2 - 2rem);
     gap: 1rem;
 }
 
 .card{
     flex: 1 1 calc((100% / 2) - 2rem);
+    text-align: center;
+}
+
+.card h2{
+    padding: .5rem;
+}
+
+.circle-card img{
+    width: 190px;
+    height: 190px;
+    border-radius: 10rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.for-u,
+.popolar{
+    padding: 1rem 0 1rem;
+}
+
+.content p{
+    padding-bottom: 2rem;
+}
+
+@media (min-width:878px) {
+    .card{
+        flex: 1 1 calc((100% / 4) - 2rem);
+    }
+}
+
+@media (min-width:1440px) {
+    .card{
+        flex: 1 1 calc((100% / 6) - 2rem);
+    }
 }
