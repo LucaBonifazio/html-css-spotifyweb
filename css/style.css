@@ -11,3 +11,73 @@ html{
 img{
     width: 100%;
 }
+
+/* general */
+
+main{
+    display: flex;
+    color: white;
+}
+
+aside{
+    flex: 0 0 auto;
+    background-color: black;
+    width: 230px;
+    height: calc(100vh - 91px);
+}
+
+.container{
+    background-color: #141922;
+}
+
+.content{
+    padding: 2rem;
+}
+
+footer{
+    background-color: #282828;
+    height: 91px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+.btn{
+    border: 1px solid white;
+    border-radius: 10rem;
+    padding: .5rem 1.5rem;
+}
+
+/* media query */
+
+/* width 552
+
+width 639
+
+width 878
+
+width 1440 */
+
+
+/* main */
+
+.top-bar{
+    background-color: rgba(0, 0, 0, .5);
+    height: 90px;
+    position: relative;
+}
+
+.btn-upgrade{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.btn-upgrade:hover{
+    transform: scale(1.2);
+}
+
