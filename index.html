@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <!-- font -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,8 +20,17 @@
     
     
     <main>
-        <aside>
-    
+        <aside class="sidebar">
+
+            <a href="#!">
+                <img class="logo logo-small" src="img/logo-small.svg" alt="logo">
+                <img class="logo-big" src="img/logo.svg" alt="logo">
+            </a>
+
+            <img class="logo" src="img/home.svg" alt="">
+            <img class="logo" src="img/libreria.svg" alt="">
+            <img class="logo" src="img/search.svg" alt="">
+            <img class="logo" src="img/profile.svg" alt="">
         </aside>
 
         <div class="container">
@@ -30,7 +43,9 @@
 
                 <div class="content">
                     <ul>
-                        <li><a href="#!">IN EVIDENZA</a></li>
+                        <li><a href="#!">IN EVIDENZA</a>
+                            <div class="green"></div>
+                        </li>
                         <li><a href="#!">PODCAST</a></li>
                         <li><a href="#!">CLASSIFICHE</a></li>
                         <li><a href="#!">GENERI E MOOD</a></li>
@@ -43,47 +58,77 @@
                     <div class="box-card">
 
                         <div class="card">
+                        <a href="#!">
                             <div class="card-img">
                                 <img src="img/metal_lifting.jpg" alt="photo">
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <h2>Heavy Metal</h2>
                             <p>Subtitle</p>
+                        </a>
                         </div>
 
                         <div class="card">
+                        <a href="#!">
                             <div class="card-img">
                                 <img src="img/stranger.jpeg" alt="photo">
+                                <div class="icon">
+                                <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <h2>Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h2>
                             <p>Kyle Dixon & Micheal Stein</p>
+                        </a>
                         </div>
                         <div class="card">
+                        <a href="#!">
                             <div class="card-img">
                                 <img src="img/aquietplace.jpeg" alt="photo">
+                                <div class="icon">
+                                <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <h2>A Quiet Place</h2>
                             <p>Subtitle</p>
+                        </a>
                         </div>
                         <div class="card">
+                        <a href="#!">
                             <div class="card-img">
                                 <img src="img/split.jpeg" alt="photo">
+                                <div class="icon">
+                                <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <h2>Split</h2>
                             <p>Subtitle</p>
+                        </a>
                         </div>
                         <div class="card">
+                        <a href="#!">
                             <div class="card-img">
                                 <img src="img/cure.jpeg" alt="photo">
+                                <div class="icon">
+                                <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <h2>A cure for wellness</h2>
                             <p>Subtitle</p>
+                        </a>
                         </div>
                         <div class="card">
+                        <a href="#!">
                             <div class="card-img">
                                 <img src="img/sinister.jpeg" alt="photo">
+                                <div class="icon">
+                                <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <h2>Sinister</h2>
                             <p>Subtitle</p>
+                        </a>
                         </div>
                         <div class="card"></div>
                         <div class="card"></div>
@@ -95,16 +140,26 @@
 
                     <div class="box-card">
                         <div class="card">
+                        <a href="#!">
                             <div class="card-img">
                                 <img src="img/radar.jpeg" alt="photo">
+                                <div class="icon">
+                                <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <h2>Release Radar</h2>
+                        </a>
                         </div>
                         <div class="card">
+                        <a href="#!">
                             <div class="card-img">
                                 <img src="img/mixdaily.jpeg" alt="photo">
+                                <div class="icon">
+                                <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <h2>Daily Mix 1</h2>
+                        </a>
                         </div>
                         <div class="card"></div>
                         <div class="card"></div>
@@ -117,16 +172,26 @@
 
                     <div class="box-card">
                         <div class="circle-card">
+                        <a href="#!">
                             <div class="card-img">
                                 <img src="img/youg.jpeg" alt="photo">
+                                <div class="icon">
+                                <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <h2>Lana Del Rey</h2>
+                        </a>
                         </div>
                         <div class="circle-card">
+                        <a href="#!">
                             <div class="card-img">
                                 <img src="img/einaudi.jpeg" alt="photo">
+                                <div class="icon">
+                                <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
                             <h2>Ludovico Einaudi</h2>
+                        </a>
                         </div>
                         <div class="circle-card"></div>
                         <div class="circle-card"></div>
@@ -139,7 +204,23 @@
     </main>
 
     <footer>
-     
+        <div class="foot-box">
+            <div class="foot-left">
+                <img src="img/sinister.jpeg" alt="photo">
+                <div class="foot-left-text">
+                    <h3>Sinister</h3>
+                    <p>Brano Nome</p>
+                </div>
+                <div class="foot-left-icon">
+                    <i class="fa-thin fa-heart"></i>
+                    <i class="fa-thin fa-folder"></i>
+                </div>
+            </div>
+            <div class="foot-center">
+               
+            </div>
+            <div class="foot-right"></div>
+        </div>
     </footer>
 </body>
 </html>
