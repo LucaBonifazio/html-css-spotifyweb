@@ -21,29 +21,40 @@
     
     <main>
         <aside class="sidebar">
-
-            <a href="#!">
-                <img class="logo logo-small" src="img/logo-small.svg" alt="logo">
-                <img class="logo-big" src="img/logo.svg" alt="logo">
-            </a>
+            
+            <div class="logo">
+                <a href="#!">
+                    <img class="logo-small" src="img/logo-small.svg" alt="logo">
+                    <img class="logo-big" src="img/logo.svg" alt="logo">
+                </a>
+            </div>
 
             <ul class="menu-list">
                 <li>
                     <a href="#">
-                        <img src="img/home.svg" alt="home">
-                        <span class="hidden-small">Home</span></a>
+                        <img class="img-list" src="img/home.svg" alt="home">
+                        <span class="name-list">Home</span>
+                    </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/search.svg" alt="search">
-                        <span class="hidden-small">Cerca</span></a>
+                        <img class="img-list" src="img/search.svg" alt="search">
+                        <span class="name-list">Cerca</span>
+                    </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="img/libreria.svg" alt="search">
-                        <span class="hidden-small">La tua libreria</span></a>
+                        <span class="name-list">La tua libreria</span>
+                    </a>
                 </li>
-              </ul>
+            </ul>
+
+            <div class="user-box">
+                <a href="#!">
+                    <img src="img/profile.svg" alt="user">
+                </a>
+            </div>
         </aside>
 
         <div class="container">
@@ -241,9 +252,13 @@
                 <a href="#!">
                     <i class="fa-solid fa-arrow-rotate-right"></i>
                 </a>
-                
+
                 <div class="timeline">
-                    <span>0.25 <span class="row-green"></span>3.50</span>
+                    <div class="timeline-green">
+                        <div class="timeline-point">
+              
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -251,7 +266,13 @@
                 <i class="fa-solid fa-sliders"></i>
                 <i class="fa-solid fa-display"></i>
                 <i class="fa-solid fa-volume-high"></i>
-                <span class="row-green"></span>
+                  <div class="volume timeline">
+                    <div class="volume timeline-green">
+                        <div class="volume timeline-point">
+              
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

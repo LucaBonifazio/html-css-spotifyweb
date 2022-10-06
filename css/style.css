@@ -91,30 +91,21 @@ ul{
     z-index: 99;
 }
 
-.sidebar img{
-    width: 100%;
-    padding: 5px;
-}
-
 .logo-big{
     display: none;
 }
 
-.sidebar ul.menu-list .hidden-small{
+.sidebar ul.menu-list .name-list{
     display: none;
 }
 
-ul li {
-    padding: 5px 10px;
+.logo-small, 
+.img-list {
+    padding: .4em;
 }
 
-.sidebar img {
-    height: 30px;
-    opacity: 0.5;
-}
-
-.sidebar ul li a:hover img {
-    opacity: 1;
+.img-list:hover{
+    color:#ffffff;
 }
 
 /* main - content */
@@ -180,7 +171,7 @@ ul li {
     bottom: 0;
     left: 0;
     width: 100%;
-    font-size: 9rem;
+    font-size: 6rem;
     background-color: rgba(0, 0, 0, .5);
     opacity: 0;
 }
@@ -321,18 +312,95 @@ h3{
     font-size: 1.5em;
 }
 
-.row-green{
+.foot-center i:hover{
+    transform: scale(1.2);
+}
+
+.timeline{
     display: flex;
     border-radius: 50px;
     height: 5px;
     width: 200px;
-    background-color: #99E32D;
+    background-color:#787A7F;
     margin: auto;
+}
+
+.timeline-green{
+    display: flex;
+    position: relative;
+    border-radius: 50px;
+    height: 5px;
+    width: 70px;
+    background-color: #979797;
+}
+
+.timeline-green:hover{
+    background-color: #99E32D;
+}
+
+.timeline-point{
+    display: flex;
+    position: absolute;
+    top: -5px;
+    left: 65px;
+    border-radius: 100px;
+    height: 15px;
+    width: 15px;
+    background-color: #787A7F;
+    opacity: 0;
+}
+
+.timeline-point:hover{
+    background-color: #787A7F;
+    opacity: 1;
+}
+
+.volume.timeline{
+    display: flex;
+    border-radius: 50px;
+    height: 5px;
+    width: 150px;
+    background-color:#787A7F;
+    margin: auto;
+}
+
+.volume.timeline-green{
+    display: flex;
+    position: relative;
+    border-radius: 50px;
+    height: 5px;
+    width: 40px;
+    background-color: #979797;
+}
+
+.volume.timeline-green:hover{
+    background-color: #99E32D;
+}
+
+.volume.timeline-point{
+    display: flex;
+    position: absolute;
+    top: -5px;
+    left: 35px;
+    border-radius: 100px;
+    height: 15px;
+    width: 15px;
+    background-color: #787A7F;
+    opacity: 0;
+}
+
+.timeline-point:hover{
+    background-color: #787A7F;
+    opacity: 1;
 }
 
 .foot-right i{
     padding: .5em;
     font-size: 1em;
+}
+
+.foot-right i:hover{
+    transform: scale(1.2);
 }
 
 
@@ -360,9 +428,11 @@ width 1440 */
         padding: 2rem;
     }
 
-    .sidebar ul.menu-list .hidden-small{
+    .sidebar ul.menu-list .name-list{
         display: inline-block;
     }
+
+
 }
 
 @media (min-width:639px) {
