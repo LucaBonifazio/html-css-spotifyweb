@@ -19,13 +19,6 @@ main{
     color: white;
 }
 
-.sidebar{
-    flex: 0 0 auto;
-    background-color: black;
-    width: 50px;
-    z-index: 99;
-}
-
 .container{
     background-color: #141922;
     width: 100%;
@@ -33,12 +26,6 @@ main{
 
 .content-box{
     margin-bottom: 91px;
-}
-
-.content{
-    padding: 7rem 2rem;
-    height: 100vh;
-    overflow: auto;
 }
 
 footer{
@@ -51,12 +38,6 @@ footer{
     z-index: 99;
 }
 
-.btn{
-    border: 1px solid white;
-    border-radius: 10rem;
-    padding: .5rem 1.5rem;
-}
-
 a{
     text-decoration: none;
     color: white;
@@ -64,6 +45,10 @@ a{
 
 p{
     color: #787A7F;
+}
+
+ul{
+    list-style: none;
 }
 
 /* media query */
@@ -90,6 +75,12 @@ width 1440 */
     z-index: 90;
 }
 
+.btn{
+    border: 1px solid white;
+    border-radius: 10rem;
+    padding: .5rem 1.5rem;
+}
+
 .btn-upgrade{
     position: absolute;
     top: 25px;
@@ -104,6 +95,13 @@ width 1440 */
 
 /* main - aside */
 
+.sidebar{
+    flex: 0 0 auto;
+    background-color: black;
+    width: 50px;
+    z-index: 99;
+}
+
 .sidebar img{
     width: 100%;
     padding: 5px;
@@ -113,6 +111,19 @@ width 1440 */
     display: none;
 }
 
+ul li {
+    padding: 5px 10px;
+}
+
+.sidebar img {
+    height: 30px;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.sidebar ul li a:hover img {
+    opacity: 1;
+}
 
 @media (min-width:552px) {
     .sidebar{
@@ -130,6 +141,12 @@ width 1440 */
 }
 
 /* main - content */
+
+.content{
+    padding: 7rem 2rem;
+    height: 100vh;
+    overflow: auto;
+}
 
 .content .recently{
     padding: 3rem 0 2rem;
