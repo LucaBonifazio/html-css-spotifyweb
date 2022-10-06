@@ -85,9 +85,13 @@ ul{
 /* main - aside */
 
 .sidebar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     flex: 0 0 auto;
     background-color: black;
     width: 50px;
+    height: calc(100vh - 91px);
     z-index: 99;
 }
 
@@ -104,8 +108,36 @@ ul{
     padding: .4em;
 }
 
-.img-list:hover{
+/*  da capire come mai non funziona
+.menu-list a:hover{
     color:#ffffff;
+} */
+
+.user-box{
+    padding: .4em;
+}
+
+.user-box:hover{
+    transform: scale(1.05);
+}
+
+.user-box a{
+    display: flex;
+    align-items: center;
+    padding: .2em;
+}
+
+.user-box img{
+    background-color: #979797;
+    border-radius: 50%;
+    padding: .1em;
+    aspect-ratio: 1 / 1;
+}
+
+.username{
+    padding: 0 1em;
+    font-weight: 900;
+    display: none;
 }
 
 /* main - content */
@@ -165,13 +197,16 @@ ul{
 }
 
 .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     width: 100%;
-    font-size: 6rem;
+    font-size: 4rem;
     background-color: rgba(0, 0, 0, .5);
     opacity: 0;
 }
@@ -254,6 +289,7 @@ ul{
 .foot-box{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .foot-box i{
@@ -314,6 +350,10 @@ h3{
 
 .foot-center i:hover{
     transform: scale(1.2);
+}
+
+.time-box{
+    display: flex;
 }
 
 .timeline{
@@ -426,12 +466,30 @@ width 1440 */
     .logo-big{
         display: block;
         padding: 2rem;
+        width: 100%;
+    }
+
+    .logo-big:hover{
+        transform: scale(1.2);
     }
 
     .sidebar ul.menu-list .name-list{
         display: inline-block;
     }
 
+    .menu-list a{
+        display: flex;
+        align-items: center;
+    }
+    
+    a img{
+        width: 50px;
+    }
+
+    .username{
+        display: block;
+    }
+    
 
 }
 
