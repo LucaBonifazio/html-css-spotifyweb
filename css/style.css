@@ -242,6 +242,11 @@ ul{
     width: 40px;
     background-color: #99E32D;
     margin: auto;
+    opacity: 0;
+}
+
+li:hover .green{
+    opacity: 1;
 }
 
 .box-card{
@@ -375,6 +380,7 @@ ul{
 }
 
 .foot-left-text{
+    font-size: x-small;
     padding: 0 .8em;
 }
 
@@ -411,7 +417,6 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    white-space: nowrap;
 }
 
 .foot-center i{
@@ -451,7 +456,7 @@ h3{
     background-color: #979797;
 }
 
-.timeline-green:hover{
+.timeline:hover .timeline-green{
     background-color: #99E32D;
 }
 
@@ -467,7 +472,7 @@ h3{
     opacity: 0;
 }
 
-.timeline-point:hover{
+.timeline:hover .timeline-point{
     background-color: #787A7F;
     opacity: 1;
 }
@@ -603,6 +608,11 @@ width 1440 */
     .playlist{
         display: flex;
         flex-direction: column;
+    }
+
+    .foot-left-text{
+        font-size: medium;
+        padding: 0 .8em;
     }
 
 }
