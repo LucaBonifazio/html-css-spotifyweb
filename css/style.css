@@ -95,7 +95,11 @@ ul{
     z-index: 99;
 }
 
+/* upper */
+
 .logo-big{
+    padding: 2rem;
+    width: 100%;
     display: none;
 }
 
@@ -103,15 +107,66 @@ ul{
     display: none;
 }
 
-.logo-small, 
+.logo-small,
 .img-list {
+    width: 50px;
     padding: .4em;
 }
 
-/*  da capire come mai non funziona
-.menu-list a:hover{
-    color:#ffffff;
-} */
+/* center */
+
+.playlist{
+    display: flex;
+    gap: 1.1em;
+    padding: .5em 1em;
+    font-weight: bold;
+    color: #787A7F;
+    display: none; 
+}
+
+.playlist .list li:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.add-play a{
+    color: #787A7F;
+}
+
+.add-play a:hover{
+    color: #ffffff;
+}
+
+.add-play .fa-plus{
+    background-color: #787A7F;
+    color: #141922;
+    font-size: 20px;
+    padding: .5em;
+}
+
+/* downer */
+
+.downer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download a{
+    display: flex;
+    text-align: center;
+    color: #787A7F;
+    font-size: small;
+}
+
+.download:hover a{
+    transform: scale(1.1);
+}
+
+.download img{
+    width: 20px;
+}
 
 .user-box{
     padding: .4em;
@@ -134,6 +189,7 @@ ul{
     aspect-ratio: 1 / 1;
 }
 
+.appload, 
 .username{
     padding: 0 1em;
     font-weight: 900;
@@ -211,7 +267,7 @@ ul{
     opacity: 0;
 }
 
-.icon:hover{
+.card .icon:hover{
     opacity: 1;
 }
 
@@ -302,11 +358,11 @@ ul{
 }
 
 .foot-left img{
-    width: 60px;
+    max-width: 50px;
 }
 
 .foot-left-text{
-    padding: 0 1em;
+    padding: 0 .8em;
 }
 
 h3{
@@ -340,11 +396,12 @@ h3{
 
 .foot-center{
     text-align: center;
+    white-space: nowrap;
 }
 
 .foot-center i{
     padding: .5em;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .foot-center i:hover{
@@ -358,6 +415,7 @@ h3{
 .time{
     color: #ffffff;
     padding: 0 .5em;
+    font-size: xx-small;
 }
 
 .timeline{
@@ -438,6 +496,12 @@ h3{
     opacity: 1;
 }
 
+.foot-right{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .8em;
+}
+
 .foot-right i{
     padding: .5em;
     font-size: 1em;
@@ -458,7 +522,7 @@ width 878
 
 width 1440 */
 
-@media (min-width:552px) {
+@media (min-width:553px) {
     .sidebar{
         width: 230px;
     }
@@ -469,8 +533,6 @@ width 1440 */
 
     .logo-big{
         display: block;
-        padding: 2rem;
-        width: 100%;
     }
 
     .logo-big:hover{
@@ -481,23 +543,55 @@ width 1440 */
         display: inline-block;
     }
 
+    .menu-list{
+        padding: 0 1em;
+    }
+
     .menu-list a{
         display: flex;
         align-items: center;
     }
-    
+
     a img{
         width: 50px;
     }
 
+    .downer{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .download{
+        padding: .5em 2.5em;
+        border-bottom: 2px solid #787A7F;
+    }
+
+    .download:hover .appload{
+        color: #ffffff;
+    }
+
+    .appload,
     .username{
         display: block;
     }
+
+    .name-list{
+        font-weight: bold;
+        color: #787A7F;
+    }
     
+    a:hover .name-list{
+        color: #ffffff;
+    }
+
+    .playlist{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
-@media (min-width:639px) {
+@media (min-width:640px) {
 
     .foot-left-icon{
         display: flex;
@@ -505,7 +599,7 @@ width 1440 */
     }
 }
 
-@media (min-width:878px) {
+@media (min-width:880px) {
     .card{
         flex: 1 1 calc((100% / 4) - 2rem);
     }
